@@ -53,11 +53,21 @@
                             </li>
                         <?php endif ?>
 				    <li class="flex-1 md:flex-none md:mr-3">
-					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
+					    <a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="/../siteJeux/traitement/inscription.php"><i class="fas fa-user-plus fa-fw mr-1"></i> Inscription</a>
 				    </li>
 				    <li class="flex-1 md:flex-none md:mr-3">
 						<div class="relative inline-block">
-							<button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none"> Hi, User <i class="fas fa-caret-square-down fa-fw mr-1"></i></button>
+                            <button onclick="toggleDD('myDropdown')" class="drop-button text-white focus:outline-none">
+                            <?php
+                            if (isset($_SESSION['user_login'])) // Si le membre est connecté
+                            {
+                            echo 'Bonjour  '.$_SESSION['user_login'].'';
+                            }
+                            else // si personne n'est connecté
+                            {
+                            }
+                            ?> <i class="fas fa-caret-square-down fa-fw mr-1"></i></button>
+                            
                             <div id="myDropdown" class="dropdownlist absolute bg-gray-900 text-white right-0 mt-3 p-3 overflow-auto z-30 invisible">
                                 <input type="text" class="drop-search p-2 text-gray-600" placeholder="Search.." id="myInput" onkeyup="filterDD('myDropdown','myInput')">
                                 <a href="#" class="p-2 hover:bg-gray-800 text-white text-sm no-underline hover:no-underline block"><i class="fa fa-user fa-fw"></i> Profile</a>

@@ -23,6 +23,7 @@ if (isset($_POST['Nom_inscription']) && isset($_POST['password'])) {
             ));
             var_dump($req);
         header('Location: /../siteJeux/traitement/succes.php');
+        
     } else {
         header('Location: /../siteJeux/traitement/erreur.php');
     }

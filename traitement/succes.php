@@ -5,6 +5,9 @@
             <div class="alert alert-success" role="alert">
                 Le formulaire à bien été envoyé !
             </div>
+            <div class="lead">
+                <a href="/../siteJeux/index.php">Retourner à l'accueil</a>
+            </div>
         </div>
 
 
