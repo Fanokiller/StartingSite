@@ -1,0 +1,43 @@
+
+body{
+    color: #111111;
+    font-family: fantasy;
+}
+.bg-red{
+    color: blue;
+    background-color: cyan;
+}
+#my-div /* usage unique*/{
+    font-size: xx-large;
+}
+/* div.bg-red englobe les div avec la spé .bg-red */
+/* div .bg-red englobe tout les ".bg-red" englobé dnas un div*/
+
+.bg-yellow{
+    background: yellow;
+}
+.border-green {
+    border: 5px solid green;
+}
+.font-size{
+    font-size: 100px;
+}
+.a + .b{
+    color: red;
+    font-size: xx-large;
+}
+input [type="text"]{
+    color: pink;
+    background-color: salmon;
+    font-size: larger;
+    border: 10px solid blue;
+}
+.floating{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#test5 {
+    position: relative;
+    height: 500px;
+}
