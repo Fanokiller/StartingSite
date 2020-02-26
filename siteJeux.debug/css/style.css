@@ -1,0 +1,13 @@
+.h3 {
+    text-decoration: underline red;
+    
+}
+.gras{
+    font-weight: bold;
+}
+.table{
+    text-align: center;
+    width: 100%;
+    height: 15%;
+    border-width: 1px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://unpkg.com/tailwindcss@%5E1.0/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41d2d2bd90.js" crossorigin="anonymous"></script>
+    <title>Acceuil</title>
+</head>
+
+<body>
+
+    <nav class="h-20 border-white-600 bg-gray-800 text-white">
+        <img src="img/culture.png" width="110px">
+    </nav>
+    <div class="md:flex items-stretch h-screen">
+        <div class="md:w-64 absolute md:static h-screen md:h-auto md:block w-full sm:hidden 
+        border-white-600 flex-none bg-gray-800 text-white-800">
+            <ul class="list-reset flex flex-row md:flex-col py-0 md:py-3 px-1 md:px-2 text-center md:text-left">
+                <li class="mr-3">
+                    <a href="accueil.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-white">
+                        <i class="fas fa-home fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Accueil</span>
+                    </a>
+                </li>
+                <li class="mr-3">
+                    <a href="liste_jeux.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-pink-500">
+                        <i class="fas fa-gamepad fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Jeux</span>
+                    </a>
+                </li>
+                <li class="mr-3">
+                    <a href="/siteJeux/apercu/apercu.php" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-purple-500">
+                        <i class="fas fa-search fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Aperçu</span>
+                    </a>
+                </li>
+                <li class="mr-3">
+                    <a href="Résumé.html" class="block py-1 md:py-3 pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-green-300">
+                        <i class="far fa-bookmark fa-fw mr-1"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Résumé</span>
+                    </a>
+                </li>
+                <li class="mr-3">
+                    <a href="formulaire.html" class="block py-1 md:py-3 pl-0 md:pl-1 align-middle text-white no-underline hover:text-white border-b-2 border-gray-800 hover:border-red-500">
+                        <i class="far fa-plus-square"></i><span class="pb-1 md:pb-0 text-xs md:text-base text-gray-600 md:text-gray-400 block md:inline-block ml-2">Forum</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-full bg-gray-400 text-center sm:text-sm text-base">
+            <p class="bold text-4xl underline">Dashbord</p>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                    <div class="bg-gray-800 border-b-4 border-green-dark rounded-lg shadow-lg p-5">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-green-dark"><i class="fas fa-gamepad fa-2x fa-inverse"></i></div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="uppercase text-white">Nombre de jeux</h5>
+                                <h3 class="text-3xl text-white">4 <span class="text-green"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                    <div class="bg-gray-800 border-b-4 border-orange rounded-lg shadow-lg p-5">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-orange-dark"><i class="fas fa-wallet fa-2x fa-inverse"></i></div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="uppercase text-white">Prix Total</h5>
+                                <h3 class="text-3xl text-white">94,87 <span class="text-orange"><i class="fa fa-eur" aria-hidden="true"></i></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 xl:w-1/3 p-3">
+                    <div class="bg-gray-800 border-b-4 border-orange rounded-lg shadow-lg p-5">
+                        <div class="flex flex-row items-center">
+                            <div class="flex-shrink pr-4">
+                                <div class="rounded-full p-5 bg-orange-dark"><i class="fa fa-user fa-2x fa-inverse" aria-hidden="true"></i></i>
+                                </div>
+                            </div>
+                            <div class="flex-1 text-right md:text-center">
+                                <h5 class="uppercase text-white">Nombre d'utilisateur</h5>
+                                <h3 class="text-3xl text-white">1 <span class="text-orange"></span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
